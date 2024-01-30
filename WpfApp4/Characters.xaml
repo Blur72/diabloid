@@ -1,0 +1,21 @@
+﻿<Page x:Class="WpfApp4.Characters"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp4"
+      mc:Ignorable="d" 
+      d:DesignHeight="1080" d:DesignWidth="1920"
+      Title="Characters">
+
+    <Grid Background="Black">
+        <Button x:Name="charBack" Content="Cancel" FontSize="64" VerticalAlignment="Top" HorizontalAlignment="Left" Background="Black" Foreground="White" BorderBrush="Black" Margin="1400,850,0,0"/>
+        <Button x:Name="charOk" Content="Ok" FontSize="64" VerticalAlignment="Top" HorizontalAlignment="Left" Background="Black" Foreground="White" BorderBrush="Black" Margin="1100,850,0,0"/>
+        <Rectangle HorizontalAlignment="Left" Height="464" Margin="900, 380,0,0" VerticalAlignment="Top" Width="835" Stroke="White"/>
+        <Rectangle HorizontalAlignment="Left" Height="196" Margin="900, 380,0,0" Stroke="White" VerticalAlignment="Top" Width="835"/>
+        <TextBlock Text="Choose Class" FontSize="64" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White" Margin="1150,435,0,0"></TextBlock>
+        <Button x:Name="charWarrior" Content="Warrior" FontSize="55" VerticalAlignment="Top" HorizontalAlignment="Left" Background="Black" Foreground="White" BorderBrush="Black" Margin="1250,580,0,0"/>
+        <Button x:Name="charRogue" Content="Rogue" FontSize="55" VerticalAlignment="Top" HorizontalAlignment="Left" Background="Black" Foreground="White" BorderBrush="Black" Margin="1250,660,0,0"/>
+        <Button x:Name="charSorcerer" Content="Sorcerer" FontSize="55" VerticalAlignment="Top" HorizontalAlignment="Left" Background="Black" Foreground="White" BorderBrush="Black" Margin="1239,740,0,0"/>
+    </Grid>
+</Page>
