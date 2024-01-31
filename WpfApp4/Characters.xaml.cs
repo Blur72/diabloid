@@ -29,5 +29,30 @@ namespace WpfApp4
         {
             NavigationService.GoBack();
         }
+
+
+        private void Grid_Loaded(object sender, RoutedEventArgs e)
+        {
+            if (lstTeam.Items.Count == 0)
+            {
+                lstTeam.Items.Add("Warrior");
+                lstTeam.Items.Add("Rogue");
+                lstTeam.Items.Add("Sorcerer");
+            }
+            else
+            {
+
+            }
+
+
+        }
+
+        private void charOk_Click(object sender, RoutedEventArgs e)
+        {
+            if (lstTeam.SelectedItem == "Warrior" ) 
+            {
+                NavigationService.Navigate(new statsWarr());
+            }
+        }
     }
 }

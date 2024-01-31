@@ -16,6 +16,7 @@ namespace WpfApp4
             intel = 10;
             dex = 15;
             vit = 25;
+            health = 
         }
     }
 }

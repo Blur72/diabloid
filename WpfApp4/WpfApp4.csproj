@@ -73,6 +73,9 @@
     <Compile Include="Rogue.cs" />
     <Compile Include="Sorcerer.cs" />
     <Compile Include="Iunits.cs" />
+    <Compile Include="statsWarr.xaml.cs">
+      <DependentUpon>statsWarr.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Warior.cs" />
     <Compile Include="units.cs" />
     <Compile Include="MainWindow.xaml.cs">
@@ -80,6 +83,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="menu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="statsWarr.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -42,5 +42,6 @@ namespace WpfApp4
         public int crtChance { get; set; }
         public int crtDam { get; set;}
     }
-    }
+    
 }
+
