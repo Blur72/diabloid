@@ -9,7 +9,7 @@ namespace WpfApp4
 {
     internal class units
     {
-        public units(int lvl, int str, int magic, int dex, int intl, int vit, int health, int mana, int physDam, int armor, int magDam, int magDef, int crtChance, int crtDam)
+        public units(int lvl, int str, int magic, int dex, int intl, int vit, int health, int mana, double physDam, double armor, double magDam, double magDef, double crtChance, double crtDam)
         {
             this.lvl = lvl;
             this.str = str;
@@ -35,12 +35,12 @@ namespace WpfApp4
         public int vit { get; set; }
         public int health { get; set; }
         public int mana { get; set; }
-        public int physDam { get; set;}
-        public int armor { get; set; }
-        public int magDam { get; set; }
-        public int magDef { get; set; }
-        public int crtChance { get; set; }
-        public int crtDam { get; set;}
+        public double physDam { get; set;}
+        public double armor { get; set;}
+        public double magDam { get; set;}
+        public double magDef { get; set;}
+        public double crtChance { get; set;}
+        public double crtDam { get; set;}
     }
 }
 
