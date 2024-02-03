@@ -72,7 +72,6 @@
     </Compile>
     <Compile Include="Rogue.cs" />
     <Compile Include="Sorcerer.cs" />
-    <Compile Include="Iunits.cs" />
     <Compile Include="statsWarr.xaml.cs">
       <DependentUpon>statsWarr.xaml</DependentUpon>
     </Compile>

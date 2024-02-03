@@ -40,3 +40,24 @@ C:\Users\222228\Desktop\егор воин\UnitsDrafts\WpfApp4\obj\Debug\WpfApp4.
 C:\Users\222228\Desktop\егор воин\UnitsDrafts\WpfApp4\obj\Debug\WpfApp4.csproj.CoreCompileInputs.cache
 C:\Users\222228\Desktop\егор воин\UnitsDrafts\WpfApp4\obj\Debug\statsWarr.g.cs
 C:\Users\222228\Desktop\егор воин\UnitsDrafts\WpfApp4\obj\Debug\statsWarr.baml
+C:\Users\939\Desktop\fablo\WpfApp4\obj\Debug\WpfApp4.csproj.AssemblyReference.cache
+C:\Users\939\Desktop\fablo\WpfApp4\obj\Debug\Characters.g.cs
+C:\Users\939\Desktop\fablo\WpfApp4\obj\Debug\MainWindow.g.cs
+C:\Users\939\Desktop\fablo\WpfApp4\obj\Debug\menu.g.cs
+C:\Users\939\Desktop\fablo\WpfApp4\obj\Debug\statsWarr.g.cs
+C:\Users\939\Desktop\fablo\WpfApp4\obj\Debug\App.g.cs
+C:\Users\939\Desktop\fablo\WpfApp4\obj\Debug\WpfApp4_MarkupCompile.cache
+C:\Users\939\Desktop\fablo\WpfApp4\obj\Debug\WpfApp4_MarkupCompile.lref
+C:\Users\939\Desktop\fablo\WpfApp4\obj\Debug\WpfApp4.exe
+C:\Users\939\Desktop\fablo\WpfApp4\obj\Debug\WpfApp4.pdb
+C:\Users\939\Desktop\fablo\WpfApp4\bin\Debug\WpfApp4.exe.config
+C:\Users\939\Desktop\fablo\WpfApp4\bin\Debug\WpfApp4.exe
+C:\Users\939\Desktop\fablo\WpfApp4\bin\Debug\WpfApp4.pdb
+C:\Users\939\Desktop\fablo\WpfApp4\obj\Debug\Characters.baml
+C:\Users\939\Desktop\fablo\WpfApp4\obj\Debug\MainWindow.baml
+C:\Users\939\Desktop\fablo\WpfApp4\obj\Debug\menu.baml
+C:\Users\939\Desktop\fablo\WpfApp4\obj\Debug\statsWarr.baml
+C:\Users\939\Desktop\fablo\WpfApp4\obj\Debug\WpfApp4.g.resources
+C:\Users\939\Desktop\fablo\WpfApp4\obj\Debug\WpfApp4.Properties.Resources.resources
+C:\Users\939\Desktop\fablo\WpfApp4\obj\Debug\WpfApp4.csproj.GenerateResource.cache
+C:\Users\939\Desktop\fablo\WpfApp4\obj\Debug\WpfApp4.csproj.CoreCompileInputs.cache

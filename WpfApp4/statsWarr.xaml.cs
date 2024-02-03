@@ -20,24 +20,35 @@ namespace WpfApp4
     /// </summary>
     public partial class statsWarr : Page
     {
+        Warior warior = new Warior(1, 30, 10, 15, 25, 2, 2, (int) (str * 0.2), 1 , 2, 2, 2, 2);
+        private static double str;
+
         public statsWarr()
         {
             InitializeComponent();
         }
+
 
         private void WarrBack_Click(object sender, RoutedEventArgs e)
         {
             NavigationService.GoBack();
         }
 
-        private void intPlus_Click(object sender, RoutedEventArgs e)
+        private void statser_Loaded(object sender, RoutedEventArgs e)
         {
-
+            
         }
 
-        private void lvlSrt_Loaded(object sender, RoutedEventArgs e)
+        private void srtPlus_Click(object sender, RoutedEventArgs e)
         {
-            lblLevel.Content = 
+            warior.lvl += 1;
+            lblLevel.Content = warior.lvl;
+            lblHealth.Content = warior.lvl;
+        }
+
+        private void lblSrt_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            
         }
     }
 }
