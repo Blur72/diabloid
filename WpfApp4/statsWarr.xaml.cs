@@ -22,16 +22,19 @@ namespace WpfApp4
     {
         Warior warior = new Warior(1, 30, 10, 15, 25, 0, 0, 0, 0, 0, 0, 0, 0);
 
+        int points;
         public statsWarr()
         {
             InitializeComponent();
             lblHealth.Content = warior.vit + warior.str;
             lblLevel.Content = warior.lvl;
-            lblSrt.Content = warior.str;
-            lblVit.Content = warior.vit;
-            lblDex.Content = warior.dex;
-            lblInt.Content = warior.intel;
+            lblSrt.Content = warior.str + "/250";
+            lblVit.Content = warior.vit + "/100";
+            lblDex.Content = warior.dex + "/80";
+            lblInt.Content = warior.intel + "/50";
             lblMana.Content = warior.intel;
+            lblPoints.Content = warior.lvl;
+            points = 1;
         }
 
 
@@ -39,54 +42,106 @@ namespace WpfApp4
         {
             NavigationService.GoBack();
         }
+        private void lvlPlus_Click(object sender, RoutedEventArgs e)
+        {
+            warior.lvl += 1;
+            lblLevel.Content = warior.lvl;
+            lblPoints.Content = warior.lvl;
+            points = warior.lvl;
+        }
 
         private void srtPlus_Click(object sender, RoutedEventArgs e)
         {
-            warior.str += 1;
-            lblSrt.Content = warior.str;
-            lblHealth.Content = warior.vit + warior.str;
+            if (points != 0)
+            {
+                points -= 1;
+                warior.str += 1;
+                lblSrt.Content = warior.str + "/250";
+                lblHealth.Content = warior.vit + warior.str;
+                lblPoints.Content = points;
+            }
+            else
+            {
+                MessageBox.Show("Недостаточно очков!");
+            }
         }
 
         private void vitPlus_Click(object sender, RoutedEventArgs e)
         {
-            warior.vit += 1;
-            lblVit.Content = warior.vit;
-            lblHealth.Content = warior.vit + warior.str;
+            if (points != 0)
+            {
+                points -= 1;
+                warior.vit += 1;
+                lblVit.Content = warior.vit + "/100";
+                lblHealth.Content = warior.vit + warior.str;
+                lblPoints.Content = points;
+            }
+            else
+            {
+                MessageBox.Show("Недостаточно очков!");
+            }
         }
 
         private void intPlus_Click(object sender, RoutedEventArgs e)
         {
-            warior.intel += 1;
-            warior.magDam += 0.2;
-            warior.magDef += 0.5;
-            lblmDam.Content = warior.magDam;
-            lblInt.Content = warior.intel;
-            lblMana.Content = warior.intel;
-            lblmDef.Content = warior.magDef;
-            string help = Convert.ToString(warior.magDam);
-            if (help.Length > 3)
+            if (points != 0)
             {
-                warior.magDam = Convert.ToInt32(warior.magDam);
+                points -= 1;
+                warior.intel += 1;
+                warior.magDam += 0.2;
+                warior.magDef += 0.5;
+                lblmDam.Content = warior.magDam;
+                lblInt.Content = warior.intel + "/50";
+                lblMana.Content = warior.intel;
+                lblmDef.Content = warior.magDef;
+                //string help = Convert.ToString(warior.magDam);
+                //if (help.Length > 3)
+                //{
+                //    warior.magDam = Convert.ToInt32(warior.magDam);
+                //}
+                lblPoints.Content = points;
+            }
+            else
+            {
+                MessageBox.Show("Недостаточно очков!");
             }
         }
 
         private void dexPlus_Click(object sender, RoutedEventArgs e)
         {
-            warior.dex += 1;
-            warior.armor += 1;
-            warior.crtChance += 0.2;
-            warior.crtDam += 0.1;
-            lblDex.Content = warior.dex;
-            lblArmor.Content = warior.armor;
-            lblcrtCh.Content = warior.crtChance;
-            lblcrtDam.Content = warior.crtDam;
+            if (points != 0)
+            {
+                points -= 1;
+                warior.dex += 1;
+                warior.armor += 1;
+                warior.crtChance += 0.2;
+                warior.crtDam += 0.1;
+                lblDex.Content = warior.dex + "/80";
+                lblArmor.Content = warior.armor;
+                lblcrtCh.Content = warior.crtChance;
+                lblcrtDam.Content = warior.crtDam;
+                lblPoints.Content = points;
+            }
+            else
+            {
+                MessageBox.Show("Недостаточно очков!");
+            }
         }
 
         private void srtMinus_Click(object sender, RoutedEventArgs e)
         {
-            warior.str -= 1;
-            lblSrt.Content = warior.str;
-            lblHealth.Content = warior.vit + warior.str;
+            if (points != 0)
+            {
+                points -= 1;
+                warior.str -= 1;
+                lblSrt.Content = warior.str;
+                lblHealth.Content = warior.vit + warior.str;
+                lblPoints.Content = points;
+            }
+            else
+            {
+                MessageBox.Show("Недостаточно очков!");
+            }
         }
 
         private void dexMinus_Click(object sender, RoutedEventArgs e)
@@ -117,13 +172,6 @@ namespace WpfApp4
             warior.vit -= 1;
             lblVit.Content = warior.vit;
             lblHealth.Content = warior.vit + warior.str;
-        }
-
-        private void lvlPlus_Click(object sender, RoutedEventArgs e)
-        {
-            warior.lvl += 1;
-            lblLevel.Content = warior.lvl;
-            lblPoints.Content = warior.lvl;
         }
     }
 }
