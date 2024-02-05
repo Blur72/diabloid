@@ -25,7 +25,6 @@ namespace WpfApp4
             magDef = 0;
             crtChance = 0;
             crtDam = 0;
-            
         }
        
                 

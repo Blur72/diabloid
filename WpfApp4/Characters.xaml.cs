@@ -49,10 +49,12 @@ namespace WpfApp4
 
         private void charOk_Click(object sender, RoutedEventArgs e)
         {
-            if (lstTeam.SelectedItem == "Warrior" ) 
-            {
-                NavigationService.Navigate(new statsWarr());
-            }
+            //if (lstTeam.SelectedItem == "Warrior") 
+            //{
+            //    NavigationService.Navigate(new statsWarr());
+            //}
+            App.Current.Resources["Almazniy"] = lstTeam.SelectedItem.ToString();
+            NavigationService.Navigate(new statsWarr());
         }
     }
 }

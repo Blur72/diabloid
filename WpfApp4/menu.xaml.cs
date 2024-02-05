@@ -31,21 +31,5 @@ namespace WpfApp4
         {
             NavigationService.Navigate(new Characters());
         }
-        //public static BitmapImage LoadBitmap(byte[] arr)
-        //{
-        //    BitmapImage bitmap = new BitmapImage();
-        //    using (var ms = new MemoryStream(arr))
-        //    {
-        //        bitmap.BeginInit();
-        //        bitmap.CacheOption = BitmapCacheOption.OnLoad;
-        //        bitmap.StreamSource = ms;
-        //        bitmap.EndInit();
-        //    }
-        //    return bitmap;
-        //}
-        //private void flames_Loaded(object sender, RoutedEventArgs e)
-        //{
-        //    flames.Source = LoadBitmap(new byte[] { });
-        //}
     }
 }
