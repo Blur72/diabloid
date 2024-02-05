@@ -33,7 +33,6 @@ namespace WpfApp4
             lblDex.Content = warior.dex + "/80";
             lblInt.Content = warior.intel + "/50";
             lblMana.Content = warior.intel;
-            lblPoints.Content = warior.lvl;
             points = 1;
         }
 
@@ -42,23 +41,19 @@ namespace WpfApp4
         {
             NavigationService.GoBack();
         }
-        private void lvlPlus_Click(object sender, RoutedEventArgs e)
-        {
-            warior.lvl += 1;
-            lblLevel.Content = warior.lvl;
-            lblPoints.Content = warior.lvl;
-            points = warior.lvl;
-        }
 
         private void srtPlus_Click(object sender, RoutedEventArgs e)
         {
-            if (points != 0)
+            if (lblPoints.Text != "0")
             {
-                points -= 1;
                 warior.str += 1;
                 lblSrt.Content = warior.str + "/250";
                 lblHealth.Content = warior.vit + warior.str;
-                lblPoints.Content = points;
+                int points = Convert.ToInt32(lblPoints.Text);
+                points--;
+                lblPoints.Text = Convert.ToString(points);
+                warior.lvl += 1;
+                lblLevel.Content = warior.lvl;
             }
             else
             {
@@ -74,7 +69,6 @@ namespace WpfApp4
                 warior.vit += 1;
                 lblVit.Content = warior.vit + "/100";
                 lblHealth.Content = warior.vit + warior.str;
-                lblPoints.Content = points;
             }
             else
             {
@@ -99,7 +93,6 @@ namespace WpfApp4
                 //{
                 //    warior.magDam = Convert.ToInt32(warior.magDam);
                 //}
-                lblPoints.Content = points;
             }
             else
             {
@@ -120,7 +113,6 @@ namespace WpfApp4
                 lblArmor.Content = warior.armor;
                 lblcrtCh.Content = warior.crtChance;
                 lblcrtDam.Content = warior.crtDam;
-                lblPoints.Content = points;
             }
             else
             {
@@ -136,7 +128,6 @@ namespace WpfApp4
                 warior.str -= 1;
                 lblSrt.Content = warior.str;
                 lblHealth.Content = warior.vit + warior.str;
-                lblPoints.Content = points;
             }
             else
             {

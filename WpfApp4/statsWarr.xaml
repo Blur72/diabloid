@@ -23,7 +23,7 @@
         <TextBlock Text="crtCh:" Foreground="White" FontSize="70" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="1263,0,0,0"/>
         <TextBlock Text="crtDam:" Foreground="White" FontSize="70" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1263,592,0,0"/>
         <TextBlock Text="Points:" Foreground="White" FontSize="70" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="941,851,0,0"/>
-        <Label x:Name="lblPoints" Content="" Background="Black" HorizontalAlignment="Left" VerticalAlignment="Top" Height="88" Width="336" Margin="1194,852,0,0" BorderBrush="White" Foreground="White" FontSize="64"></Label>
+        <TextBox x:Name="lblPoints" Background="Black" HorizontalAlignment="Left" VerticalAlignment="Top" Height="88" Width="336" Margin="1194,852,0,0" BorderBrush="White" Foreground="White" FontSize="64"/>
         <Label x:Name="lblSrt" Background="Black" HorizontalAlignment="Left" Margin="325,225,0,0" VerticalAlignment="Top" Height="75" Width="316" Foreground="White" FontSize="50"/>
         <Label Name="lblDex" Content="" HorizontalAlignment="Left" Margin="325,305,0,0" VerticalAlignment="Top" Height="75" Width="316" Foreground="White" FontSize="50"/>
         <Label Name="lblInt" Content="" HorizontalAlignment="Left" Margin="325,385,0,0" VerticalAlignment="Top" Height="93" Width="317" Foreground="White" FontSize="50"/>
@@ -45,7 +45,6 @@
         <Button x:Name="dexPlus" Content="+" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White" FontSize="30" Background="Black" BorderBrush="White" Margin="841,308,0,0" Height="75" Width="75" Click="dexPlus_Click"/>
         <Button x:Name="intPlus" Content="+" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White" FontSize="30" Background="Black" BorderBrush="White" Margin="841,390,0,0" Height="75" Width="75" Click="intPlus_Click"/>
         <Button x:Name="vitPlus" Content="+" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White" FontSize="30" Background="Black" BorderBrush="White" Margin="841,470,0,0" Height="75" Width="75" Click="vitPlus_Click"/>
-        <Button x:Name="lvlPlus" Content="+" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White" FontSize="30" Background="Black" BorderBrush="White" Margin="711,109,0,0" Height="75" Width="75" Click="lvlPlus_Click"/>
 
     </Grid>
 </Page>
