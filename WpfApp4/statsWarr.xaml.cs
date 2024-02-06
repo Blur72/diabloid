@@ -27,6 +27,7 @@ namespace WpfApp4
         int points;
         public statsWarr()
         {
+            System.Windows.Application.Current.Shutdown();
             InitializeComponent();
         }
 
@@ -57,6 +58,7 @@ namespace WpfApp4
                         lblPoints.Text = Convert.ToString(points);
                         warior.lvl += 1;
                         lblLevel.Content = warior.lvl;
+                        lblpDam.Content = warior.str;
                     }
                     else
                     {
@@ -84,6 +86,7 @@ namespace WpfApp4
                         lblPoints.Text = Convert.ToString(points);
                         rogue.lvl += 1;
                         lblLevel.Content = rogue.lvl;
+                        lblLevel.Content = rogue.lvl;
                     }
                     else
                     {
@@ -110,6 +113,7 @@ namespace WpfApp4
                         points--;
                         lblPoints.Text = Convert.ToString(points);
                         sorcerer.lvl += 1;
+                        lblLevel.Content = sorcerer.lvl;
                         lblLevel.Content = sorcerer.lvl;
                     }
                     else
@@ -280,8 +284,8 @@ namespace WpfApp4
                     if (lblPoints.Text != "0")
                     {
                         sorcerer.intel += 1;
-                        sorcerer.magDam += 0.2;
-                        sorcerer.magDef += 0.5;
+                        sorcerer.magDam += 1;
+                        sorcerer.magDef += 1;
                         lblmDam.Content = sorcerer.magDam;
                         lblInt.Content = sorcerer.intel + "/50";
                         lblMana.Content = sorcerer.intel;
@@ -346,7 +350,7 @@ namespace WpfApp4
                     if (lblPoints.Text != "0")
                     {
                         rogue.dex += 1;
-                        rogue.armor += 1;
+                        rogue.armor += 1.5;
                         rogue.crtChance += 0.2;
                         rogue.crtDam += 0.1;
                         lblDex.Content = rogue.dex + "/80";
@@ -411,6 +415,7 @@ namespace WpfApp4
                     int points = Convert.ToInt32(lblPoints.Text);
                     points++;
                     lblPoints.Text = Convert.ToString(points);
+                    lblpDam.Content = warior.str;
                 }
                 else
                 {
@@ -428,6 +433,7 @@ namespace WpfApp4
                     int points = Convert.ToInt32(lblPoints.Text);
                     points++;
                     lblPoints.Text = Convert.ToString(points);
+                    lblpDam.Content = rogue.str;
                 }
                 else
                 {
@@ -445,6 +451,7 @@ namespace WpfApp4
                     int points = Convert.ToInt32(lblPoints.Text);
                     points++;
                     lblPoints.Text = Convert.ToString(points);
+                    lblpDam.Content = sorcerer.str;
                 }
                 else
                 {
@@ -482,7 +489,7 @@ namespace WpfApp4
                 if (lblPoints.Text != "0")
                 {
                     rogue.dex -= 1;
-                    rogue.armor -= 1;
+                    rogue.armor -= 1.5;
                     rogue.crtChance -= 0.2;
                     rogue.crtDam -= 0.1;
                     lblDex.Content = rogue.dex;
@@ -571,8 +578,8 @@ namespace WpfApp4
                 if (lblPoints.Text != "0")
                 {
                     sorcerer.intel -= 1;
-                    sorcerer.magDam -= 0.2;
-                    sorcerer.magDef -= 0.5;
+                    sorcerer.magDam -= 1;
+                    sorcerer.magDef -= 1;
                     lblmDam.Content = sorcerer.magDam;
                     lblInt.Content = sorcerer.intel;
                     lblMana.Content = sorcerer.intel;

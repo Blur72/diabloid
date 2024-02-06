@@ -59,6 +59,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Creator.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -69,6 +73,10 @@
     </Compile>
     <Compile Include="Characters.xaml.cs">
       <DependentUpon>Characters.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Creator.xaml.cs">
+      <DependentUpon>Creator.xaml</DependentUpon>
     </Compile>
     <Compile Include="Rogue.cs" />
     <Compile Include="Sorcerer.cs" />
@@ -119,7 +127,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="iamge\gragbot.png" />
+  </ItemGroup>
   <ItemGroup>
     <Resource Include="iamge\photo_5314425823371056525_x.jpg" />
     <Resource Include="iamge\photo_5314425823371056526_x.jpg" />

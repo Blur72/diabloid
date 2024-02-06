@@ -46,6 +46,8 @@
         <Button x:Name="dexPlus" Content="+" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White" FontSize="30" Background="Black" BorderBrush="White" Margin="841,308,0,0" Height="75" Width="75" Click="dexPlus_Click"/>
         <Button x:Name="intPlus" Content="+" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White" FontSize="30" Background="Black" BorderBrush="White" Margin="841,390,0,0" Height="75" Width="75" Click="intPlus_Click"/>
         <Button x:Name="vitPlus" Content="+" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White" FontSize="30" Background="Black" BorderBrush="White" Margin="841,470,0,0" Height="75" Width="75" Click="vitPlus_Click"/>
+        <TextBlock Text="p.Dam" Foreground="White" FontSize="70" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1260,94,0,0"/>
+        <Label x:Name="lblpDam" Content="" HorizontalAlignment="Left" Margin="1593,94,0,0" VerticalAlignment="Top" Height="93" Width="317" Foreground="White" FontSize="50"/>
 
     </Grid>
 </Page>
