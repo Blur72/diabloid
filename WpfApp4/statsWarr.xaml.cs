@@ -40,58 +40,82 @@ namespace WpfApp4
         {
             if ((string)App.Current.Resources["Almazniy"] == "Warrior")
             {
-                if (lblPoints.Text != "0")
+                if (string.IsNullOrWhiteSpace(lblPoints.Text))
                 {
-                    warior.str += 1;
-                    lblSrt.Content = warior.str + "/250";
-                    lblHealth.Content = warior.vit + warior.str;
-                    int points = Convert.ToInt32(lblPoints.Text);
-                    points--;
-                    lblPoints.Text = Convert.ToString(points);
-                    warior.lvl += 1;
-                    lblLevel.Content = warior.lvl;
+                    MessageBox.Show("Количетсов очков не заполнено!");
+                    return;
                 }
                 else
                 {
-                    MessageBox.Show("Недостаточно очков!");
+                    if (lblPoints.Text != "0")
+                    {
+                        warior.str += 1;
+                        lblSrt.Content = warior.str + "/250";
+                        lblHealth.Content = warior.vit + warior.str;
+                        int points = Convert.ToInt32(lblPoints.Text);
+                        points--;
+                        lblPoints.Text = Convert.ToString(points);
+                        warior.lvl += 1;
+                        lblLevel.Content = warior.lvl;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Недостаточно очков!");
+                    }
                 }
             }
             else
             if ((string)App.Current.Resources["Almazniy"] == "Rogue")
             {
-                if (lblPoints.Text != "0")
+                if (string.IsNullOrWhiteSpace(lblPoints.Text))
                 {
-                    rogue.str += 1;
-                    lblSrt.Content = rogue.str + "/250";
-                    lblHealth.Content = rogue.vit + rogue.str;
-                    int points = Convert.ToInt32(lblPoints.Text);
-                    points--;
-                    lblPoints.Text = Convert.ToString(points);
-                    rogue.lvl += 1;
-                    lblLevel.Content = rogue.lvl;
+                    MessageBox.Show("Количетсов очков не заполнено!");
+                    return;
                 }
                 else
                 {
-                    MessageBox.Show("Недостаточно очков!");
+                    if (lblPoints.Text != "0")
+                    {
+                        rogue.str += 1;
+                        lblSrt.Content = rogue.str + "/250";
+                        lblHealth.Content = rogue.vit + rogue.str;
+                        int points = Convert.ToInt32(lblPoints.Text);
+                        points--;
+                        lblPoints.Text = Convert.ToString(points);
+                        rogue.lvl += 1;
+                        lblLevel.Content = rogue.lvl;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Недостаточно очков!");
+                    }
                 }
             }
             else
             if ((string)App.Current.Resources["Almazniy"] == "Sorcerer")
             {
-                if (lblPoints.Text != "0")
+                if (string.IsNullOrWhiteSpace(lblPoints.Text))
                 {
-                    sorcerer.str += 1;
-                    lblSrt.Content = sorcerer.str + "/250";
-                    lblHealth.Content = sorcerer.vit + sorcerer.str;
-                    int points = Convert.ToInt32(lblPoints.Text);
-                    points--;
-                    lblPoints.Text = Convert.ToString(points);
-                    sorcerer.lvl += 1;
-                    lblLevel.Content = sorcerer.lvl;
+                    MessageBox.Show("Количетсов очков не заполнено!");
+                    return;
                 }
                 else
                 {
-                    MessageBox.Show("Недостаточно очков!");
+                    if (lblPoints.Text != "0")
+                    {
+                        sorcerer.str += 1;
+                        lblSrt.Content = sorcerer.str + "/250";
+                        lblHealth.Content = sorcerer.vit + sorcerer.str;
+                        int points = Convert.ToInt32(lblPoints.Text);
+                        points--;
+                        lblPoints.Text = Convert.ToString(points);
+                        sorcerer.lvl += 1;
+                        lblLevel.Content = sorcerer.lvl;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Недостаточно очков!");
+                    }
                 }
             }
         }
@@ -100,58 +124,82 @@ namespace WpfApp4
         {
             if ((string)App.Current.Resources["Almazniy"] == "Warrior")
             {
-                if (lblPoints.Text != "0")
+                if (string.IsNullOrWhiteSpace(lblPoints.Text))
                 {
-                    warior.vit += 1;
-                    lblVit.Content = warior.vit + "/100";
-                    lblHealth.Content = warior.vit + warior.str;
-                    int points = Convert.ToInt32(lblPoints.Text);
-                    points--;
-                    lblPoints.Text = Convert.ToString(points);
-                    warior.lvl += 1;
-                    lblLevel.Content = warior.lvl;
+                    MessageBox.Show("Количетсов очков не заполнено!");
+                    return;
                 }
                 else
                 {
-                    MessageBox.Show("Недостаточно очков!");
+                    if (lblPoints.Text != "0")
+                    {
+                        warior.vit += 1;
+                        lblVit.Content = warior.vit + "/100";
+                        lblHealth.Content = warior.vit + warior.str;
+                        int points = Convert.ToInt32(lblPoints.Text);
+                        points--;
+                        lblPoints.Text = Convert.ToString(points);
+                        warior.lvl += 1;
+                        lblLevel.Content = warior.lvl;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Недостаточно очков!");
+                    }
                 }
             }
             else
             if ((string)App.Current.Resources["Almazniy"] == "Rogue")
             {
-                if (lblPoints.Text != "0")
+                if (string.IsNullOrWhiteSpace(lblPoints.Text))
                 {
-                    rogue.vit += 1;
-                    lblVit.Content = rogue.vit + "/100";
-                    lblHealth.Content = rogue.vit + rogue.str;
-                    int points = Convert.ToInt32(lblPoints.Text);
-                    points--;
-                    lblPoints.Text = Convert.ToString(points);
-                    rogue.lvl += 1;
-                    lblLevel.Content = rogue.lvl;
+                    MessageBox.Show("Количетсов очков не заполнено!");
+                    return;
                 }
                 else
                 {
-                    MessageBox.Show("Недостаточно очков!");
+                    if (lblPoints.Text != "0")
+                    {
+                        rogue.vit += 1;
+                        lblVit.Content = rogue.vit + "/100";
+                        lblHealth.Content = rogue.vit + rogue.str;
+                        int points = Convert.ToInt32(lblPoints.Text);
+                        points--;
+                        lblPoints.Text = Convert.ToString(points);
+                        rogue.lvl += 1;
+                        lblLevel.Content = rogue.lvl;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Недостаточно очков!");
+                    }
                 }
             }
             else
             if ((string)App.Current.Resources["Almazniy"] == "Sorcerer")
             {
-                if (lblPoints.Text != "0")
+                if (string.IsNullOrWhiteSpace(lblPoints.Text))
                 {
-                    sorcerer.vit += 1;
-                    lblVit.Content = sorcerer.vit + "/100";
-                    lblHealth.Content = sorcerer.vit + sorcerer.str;
-                    int points = Convert.ToInt32(lblPoints.Text);
-                    points--;
-                    lblPoints.Text = Convert.ToString(points);
-                    sorcerer.lvl += 1;
-                    lblLevel.Content = sorcerer.lvl;
+                    MessageBox.Show("Количетсов очков не заполнено!");
+                    return;
                 }
                 else
                 {
-                    MessageBox.Show("Недостаточно очков!");
+                    if (lblPoints.Text != "0")
+                    {
+                        sorcerer.vit += 1;
+                        lblVit.Content = sorcerer.vit + "/100";
+                        lblHealth.Content = sorcerer.vit + sorcerer.str;
+                        int points = Convert.ToInt32(lblPoints.Text);
+                        points--;
+                        lblPoints.Text = Convert.ToString(points);
+                        sorcerer.lvl += 1;
+                        lblLevel.Content = sorcerer.lvl;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Недостаточно очков!");
+                    }
                 }
             }
         }
@@ -160,70 +208,94 @@ namespace WpfApp4
         {
             if ((string)App.Current.Resources["Almazniy"] == "Warrior")
             {
-                if (lblPoints.Text != "0")
+                if (string.IsNullOrWhiteSpace(lblPoints.Text))
                 {
-                    warior.intel += 1;
-                    warior.magDam += 0.2;
-                    warior.magDef += 0.5;
-                    lblmDam.Content = warior.magDam;
-                    lblInt.Content = warior.intel + "/50";
-                    lblMana.Content = warior.intel;
-                    lblmDef.Content = warior.magDef;
-                    int points = Convert.ToInt32(lblPoints.Text);
-                    points--;
-                    lblPoints.Text = Convert.ToString(points);
-                    sorcerer.lvl += 1;
-                    lblLevel.Content = sorcerer.lvl;
+                    MessageBox.Show("Количетсов очков не заполнено!");
+                    return;
                 }
                 else
                 {
-                    MessageBox.Show("Недостаточно очков!");
+                    if (lblPoints.Text != "0")
+                    {
+                        warior.intel += 1;
+                        warior.magDam += 0.2;
+                        warior.magDef += 0.5;
+                        lblmDam.Content = warior.magDam;
+                        lblInt.Content = warior.intel + "/50";
+                        lblMana.Content = warior.intel;
+                        lblmDef.Content = warior.magDef;
+                        int points = Convert.ToInt32(lblPoints.Text);
+                        points--;
+                        lblPoints.Text = Convert.ToString(points);
+                        sorcerer.lvl += 1;
+                        lblLevel.Content = sorcerer.lvl;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Недостаточно очков!");
+                    }
                 }
             }
             else
             if ((string)App.Current.Resources["Almazniy"] == "Rogue")
             {
-                if (lblPoints.Text != "0")
+                if (string.IsNullOrWhiteSpace(lblPoints.Text))
                 {
-                    rogue.intel += 1;
-                    rogue.magDam += 0.2;
-                    rogue.magDef += 0.5;
-                    lblmDam.Content = rogue.magDam;
-                    lblInt.Content = rogue.intel + "/50";
-                    lblMana.Content = rogue.intel;
-                    lblmDef.Content = rogue.magDef;
-                    int points = Convert.ToInt32(lblPoints.Text);
-                    points--;
-                    lblPoints.Text = Convert.ToString(points);
-                    sorcerer.lvl += 1;
-                    lblLevel.Content = sorcerer.lvl;
+                    MessageBox.Show("Количетсов очков не заполнено!");
+                    return;
                 }
                 else
                 {
-                    MessageBox.Show("Недостаточно очков!");
+                    if (lblPoints.Text != "0")
+                    {
+                        rogue.intel += 1;
+                        rogue.magDam += 0.2;
+                        rogue.magDef += 0.5;
+                        lblmDam.Content = rogue.magDam;
+                        lblInt.Content = rogue.intel + "/50";
+                        lblMana.Content = rogue.intel;
+                        lblmDef.Content = rogue.magDef;
+                        int points = Convert.ToInt32(lblPoints.Text);
+                        points--;
+                        lblPoints.Text = Convert.ToString(points);
+                        sorcerer.lvl += 1;
+                        lblLevel.Content = sorcerer.lvl;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Недостаточно очков!");
+                    }
                 }
             }
             else
             if ((string)App.Current.Resources["Almazniy"] == "Sorcerer")
             {
-                if (lblPoints.Text != "0")
+                if (string.IsNullOrWhiteSpace(lblPoints.Text))
                 {
-                    sorcerer.intel += 1;
-                    sorcerer.magDam += 0.2;
-                    sorcerer.magDef += 0.5;
-                    lblmDam.Content = sorcerer.magDam;
-                    lblInt.Content = sorcerer.intel + "/50";
-                    lblMana.Content = sorcerer.intel;
-                    lblmDef.Content = sorcerer.magDef;
-                    int points = Convert.ToInt32(lblPoints.Text);
-                    points--;
-                    lblPoints.Text = Convert.ToString(points);
-                    sorcerer.lvl += 1;
-                    lblLevel.Content = sorcerer.lvl;
+                    MessageBox.Show("Количетсов очков не заполнено!");
+                    return;
                 }
                 else
                 {
-                    MessageBox.Show("Недостаточно очков!");
+                    if (lblPoints.Text != "0")
+                    {
+                        sorcerer.intel += 1;
+                        sorcerer.magDam += 0.2;
+                        sorcerer.magDef += 0.5;
+                        lblmDam.Content = sorcerer.magDam;
+                        lblInt.Content = sorcerer.intel + "/50";
+                        lblMana.Content = sorcerer.intel;
+                        lblmDef.Content = sorcerer.magDef;
+                        int points = Convert.ToInt32(lblPoints.Text);
+                        points--;
+                        lblPoints.Text = Convert.ToString(points);
+                        sorcerer.lvl += 1;
+                        lblLevel.Content = sorcerer.lvl;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Недостаточно очков!");
+                    }
                 }
             }   
         }
@@ -232,55 +304,78 @@ namespace WpfApp4
         {
             if ((string)App.Current.Resources["Almazniy"] == "Warrior")
             {
-                if (lblPoints.Text != "0")
+                if (string.IsNullOrWhiteSpace(lblPoints.Text))
                 {
-                    warior.dex += 1;
-                    warior.armor += 1;
-                    warior.crtChance += 0.2;
-                    warior.crtDam += 0.1;
-                    lblDex.Content = warior.dex + "/80";
-                    lblArmor.Content = warior.armor;
-                    lblcrtCh.Content = warior.crtChance;
-                    lblcrtDam.Content = warior.crtDam;
-                    int points = Convert.ToInt32(lblPoints.Text);
-                    points--;
-                    lblPoints.Text = Convert.ToString(points);
-                    warior.lvl += 1;
-                    lblLevel.Content = warior.lvl;
+                    MessageBox.Show("Количетсов очков не заполнено!");
+                    return;
                 }
                 else
                 {
-                    MessageBox.Show("Недостаточно очков!");
+                    if (lblPoints.Text != "0")
+                    {
+                        warior.dex += 1;
+                        warior.armor += 1;
+                        warior.crtChance += 0.2;
+                        warior.crtDam += 0.1;
+                        lblDex.Content = warior.dex + "/80";
+                        lblArmor.Content = warior.armor;
+                        lblcrtCh.Content = warior.crtChance;
+                        lblcrtDam.Content = warior.crtDam;
+                        int points = Convert.ToInt32(lblPoints.Text);
+                        points--;
+                        lblPoints.Text = Convert.ToString(points);
+                        warior.lvl += 1;
+                        lblLevel.Content = warior.lvl;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Недостаточно очков!");
+                    }
                 }
             }
             else
             if ((string)App.Current.Resources["Almazniy"] == "Rogue")
             {
-                if (lblPoints.Text != "0")
+                if (string.IsNullOrWhiteSpace(lblPoints.Text))
                 {
-                    rogue.dex += 1;
-                    rogue.armor += 1;
-                    rogue.crtChance += 0.2;
-                    rogue.crtDam += 0.1;
-                    lblDex.Content = rogue.dex + "/80";
-                    lblArmor.Content = rogue.armor;
-                    lblcrtCh.Content = rogue.crtChance;
-                    lblcrtDam.Content = rogue.crtDam;
-                    int points = Convert.ToInt32(lblPoints.Text);
-                    points--;
-                    lblPoints.Text = Convert.ToString(points);
-                    warior.lvl += 1;
-                    lblLevel.Content = warior.lvl;
+                    MessageBox.Show("Количетсов очков не заполнено!");
+                    return;
                 }
                 else
                 {
-                    MessageBox.Show("Недостаточно очков!");
+                    if (lblPoints.Text != "0")
+                    {
+                        rogue.dex += 1;
+                        rogue.armor += 1;
+                        rogue.crtChance += 0.2;
+                        rogue.crtDam += 0.1;
+                        lblDex.Content = rogue.dex + "/80";
+                        lblArmor.Content = rogue.armor;
+                        lblcrtCh.Content = rogue.crtChance;
+                        lblcrtDam.Content = rogue.crtDam;
+                        int points = Convert.ToInt32(lblPoints.Text);
+                        points--;
+                        lblPoints.Text = Convert.ToString(points);
+                        warior.lvl += 1;
+                        lblLevel.Content = warior.lvl;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Недостаточно очков!");
+                    }
                 }
             }
             else
             if ((string)App.Current.Resources["Almazniy"] == "Sorcerer")
             {
-                if (lblPoints.Text != "0")
+                if (string.IsNullOrWhiteSpace(lblPoints.Text))
+                {
+                    MessageBox.Show("Количетсов очков не заполнено!");
+                    return;
+                }
+                else
+                {
+                    if (lblPoints.Text != "0")
                 {
                     sorcerer.dex += 1;
                     sorcerer.armor += 1;
@@ -295,10 +390,11 @@ namespace WpfApp4
                     lblPoints.Text = Convert.ToString(points);
                     sorcerer.lvl += 1;
                     lblLevel.Content = sorcerer.lvl;
-                }
-                else
-                {
-                    MessageBox.Show("Недостаточно очков!");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Недостаточно очков!");
+                    }
                 }
             }
         }
