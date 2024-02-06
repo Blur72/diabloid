@@ -9,6 +9,7 @@
       Title="menu">
 
     <Grid Background="Black">
+        <Border BorderBrush="White" BorderThickness="15"></Border>
         <Button x:Name="btnSingle" Content="Single player" FontSize="64" Foreground="Yellow" VerticalAlignment="Top" HorizontalAlignment="Center" Background="Black" BorderBrush="Black" Click="btnSingle_Click" Margin="0,500,0,0"></Button>
         <Button x:Name="btnMulty" Content="Multy player" FontSize="64" Foreground="Yellow" VerticalAlignment="Top" HorizontalAlignment="Center" Background="Black" BorderBrush="Black" Margin="0, 650,0,0"/>
         <Button x:Name="btnExit" Content="Exit player" FontSize="64" Foreground="Yellow" VerticalAlignment="Top" HorizontalAlignment="Center" Background="Black" BorderBrush="Black"  Margin="0, 800 ,0,0"/>

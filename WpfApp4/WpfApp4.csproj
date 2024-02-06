@@ -129,6 +129,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="iamge\gragbot.png" />
+    <Resource Include="iamge\image %284%29.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="iamge\photo_5314425823371056525_x.jpg" />

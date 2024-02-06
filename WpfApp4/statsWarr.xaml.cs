@@ -27,7 +27,6 @@ namespace WpfApp4
         int points;
         public statsWarr()
         {
-            System.Windows.Application.Current.Shutdown();
             InitializeComponent();
         }
 
@@ -35,6 +34,10 @@ namespace WpfApp4
         private void WarrBack_Click(object sender, RoutedEventArgs e)
         {
             NavigationService.GoBack();
+        }
+        private void nextCreator_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Creator());
         }
 
         private void srtPlus_Click(object sender, RoutedEventArgs e)

@@ -9,16 +9,33 @@
       Title="Creator">
 
     <Grid Background="Black">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition Width="29*"/>
-        </Grid.ColumnDefinitions>
-        <Border BorderThickness="10" BorderBrush="White" Margin="791,116,725,436" Grid.Column="1">
-            <Image Source="/iamge/gragbot.png" HorizontalAlignment="Center" Width="440" Margin="0,-19,0,-19"/>
+        <Border BorderBrush="White" BorderThickness="15"/>
+        <TextBlock Text="Inventory" Foreground="White" FontSize="64" VerticalAlignment="Top" HorizontalAlignment="Left" Height="92" Width="275" Margin="825,28,0,0" FontFamily="Papyrus"></TextBlock>
+        <Border BorderThickness="10" BorderBrush="White" Margin="825,352,825,488">
+            <Image Source="/iamge/gragbot.png" HorizontalAlignment="Center" Width="250" Margin="0,0,0,-2"/>
         </Border>
-        <Border BorderBrush="White" BorderThickness="1" Grid.Column="1" HorizontalAlignment="Left" Height="207" Margin="1490,275,0,0" VerticalAlignment="Top" Width="291"/>
-        <Border BorderBrush="White" BorderThickness="1" Grid.Column="1" HorizontalAlignment="Left" Height="207" Margin="1344,540,0,0" VerticalAlignment="Top" Width="292"/>
-        <Border BorderBrush="White" BorderThickness="1" Grid.Column="1" HorizontalAlignment="Left" Height="207" Margin="146,275,0,0" VerticalAlignment="Top" Width="291"/>
-        <Border BorderBrush="White" BorderThickness="1" Grid.Column="1" HorizontalAlignment="Left" Height="207" Margin="389,540,0,0" VerticalAlignment="Top" Width="291"/>
+        <Border x:Name="slot1" BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="265" Margin="1274,327,0,0" VerticalAlignment="Top" Width="165"/>
+        <Border x:Name="slot2" BorderBrush="White" BorderThickness="1" HorizontalAlignment="Center" Height="175" Margin="0,153,0,0" VerticalAlignment="Top" Width="176"/>
+        <Border x:Name="slotWeapon" BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="265" Margin="488,327,0,0" VerticalAlignment="Top" Width="165" MouseLeftButtonDown="slotWeapon_MouseLeftButtonDown"/>
+        <Border x:Name="slot4" BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" VerticalAlignment="Top" Height="100" Width="100" Margin="670,684,0,0" MouseLeftButtonDown="slot4_MouseLeftButtonDown">
+            <Image x:Name="sword" Source="/iamge/image (4).png" HorizontalAlignment="Center" VerticalAlignment="Center" Width="64"/>
+        </Border>
+        <Border x:Name="slot5" BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="100" Margin="770,684,0,0" VerticalAlignment="Top" Width="100"/>
+        <Border x:Name="slot6" BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="100" Margin="870,684,0,0" VerticalAlignment="Top" Width="100"/>
+        <Border x:Name="slot7" BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="100" Margin="970,684,0,0" VerticalAlignment="Top" Width="100"/>
+        <Border x:Name="slot8" BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="100" Margin="1070,684,0,0" VerticalAlignment="Top" Width="100"/>
+        <Border x:Name="slot9" BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="100" Margin="1170,684,0,0" VerticalAlignment="Top" Width="100"/>
+        <Border x:Name="slot10" BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="100" Margin="670,784,0,0" VerticalAlignment="Top" Width="100"/>
+        <Border x:Name="slot11" BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="100" Margin="770,784,0,0" VerticalAlignment="Top" Width="100"/>
+        <Border x:Name="slot12" BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="100" Margin="870,784,0,0" VerticalAlignment="Top" Width="100"/>
+        <Border x:Name="slot13" BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="100" Margin="970,784,0,0" VerticalAlignment="Top" Width="100"/>
+        <Border x:Name="slot14" BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="100" Margin="1070,784,0,0" VerticalAlignment="Top" Width="100"/>
+        <Border x:Name="slot15" BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="100" Margin="1170,784,0,0" VerticalAlignment="Top" Width="100"/>
+        <Border x:Name="slot16" BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="100" Margin="670,884,0,0" VerticalAlignment="Top" Width="100"/>
+        <Border x:Name="slot17" BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="100" Margin="770,884,0,0" VerticalAlignment="Top" Width="100"/>
+        <Border x:Name="slot18" BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="100" Margin="870,884,0,0" VerticalAlignment="Top" Width="100"/>
+        <Border x:Name="slot19" BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="100" Margin="970,884,0,0" VerticalAlignment="Top" Width="100"/>
+        <Border x:Name="slot20" BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="100" Margin="1070,884,0,0" VerticalAlignment="Top" Width="100"/>
+        <Border x:Name="slot21" BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="100" Margin="1170,884,0,0" VerticalAlignment="Top" Width="100"/>
     </Grid>
 </Page>

@@ -24,5 +24,37 @@ namespace WpfApp4
         {
             InitializeComponent();
         }
+
+        //private void Image_MouseDown(object sender, MouseButtonEventArgs e)
+        //{
+        //    Image img = new Image();
+        //    img.Source = new BitmapImage(new Uri("/iamge/image (4).png", UriKind.Relative));
+        //    slotWeapon.Child = img;
+        //    slot4.Child = null;
+        //}
+
+        //private void slotWeapon_MouseDown(object sender, MouseButtonEventArgs e)
+        //{
+        //    Image img = new Image();
+        //    img.Source = new BitmapImage(new Uri("/iamge/image (4).png", UriKind.Relative));
+        //    slot4.Child = img;
+        //    slotWeapon.Child = null;
+        //}
+
+        private void slotWeapon_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            Image img = new Image();
+            img.Source = new BitmapImage(new Uri("/iamge/image (4).png", UriKind.Relative));
+            slot4.Child = img;
+            slotWeapon.Child = null;
+        }
+
+        private void slot4_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            Image img = new Image();
+            img.Source = new BitmapImage(new Uri("/iamge/image (4).png", UriKind.Relative));
+            slotWeapon.Child = img;
+            slot4.Child = null;
+        }
     }
 }

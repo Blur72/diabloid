@@ -9,9 +9,10 @@
       d:DesignHeight="1080" d:DesignWidth="1920"
       Title="statsWarr">
 
-    <Grid x:Name="statser" Background="Black" >
+    <Grid x:Name="statser" Background="Black">
+        <Border BorderBrush="White" BorderThickness="15"></Border>
         <TextBlock Text="Level:" Foreground="White" FontSize="70" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="94,94,0,0"></TextBlock>
-        <Button x:Name="WarrBack" Content="←" Foreground="White" FontSize="64" HorizontalAlignment="Left" VerticalAlignment="Top" Background="Black" Click="WarrBack_Click" BorderBrush="Black" Width="116"></Button>
+        <Button x:Name="WarrBack" Content="←" Foreground="White" FontSize="64" HorizontalAlignment="Left" VerticalAlignment="Top" Background="Black" Click="WarrBack_Click" BorderBrush="Black" Width="79" Margin="20,18,0,0" Height="81"></Button>
         <TextBlock x:Name="lblClass" Foreground="White" FontSize="70" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="826,14,0,0"/>
         <TextBlock Text="Str:" Foreground="White" FontSize="70" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="94,210,0,0"/>
         <TextBlock Text="Dex:" Foreground="White" FontSize="70" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="94,290,0,0"/>
@@ -48,6 +49,7 @@
         <Button x:Name="vitPlus" Content="+" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White" FontSize="30" Background="Black" BorderBrush="White" Margin="841,470,0,0" Height="75" Width="75" Click="vitPlus_Click"/>
         <TextBlock Text="p.Dam" Foreground="White" FontSize="70" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1260,94,0,0"/>
         <Label x:Name="lblpDam" Content="" HorizontalAlignment="Left" Margin="1593,94,0,0" VerticalAlignment="Top" Height="93" Width="317" Foreground="White" FontSize="50"/>
+        <Button x:Name="nextCreator" Content="→" Foreground="White" FontSize="64" HorizontalAlignment="Left" VerticalAlignment="Top" Background="Black" Click="nextCreator_Click" BorderBrush="Black" Width="116" Margin="1727,955,0,0"/>
 
     </Grid>
 </Page>
