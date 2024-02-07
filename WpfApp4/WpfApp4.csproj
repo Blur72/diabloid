@@ -74,7 +74,8 @@
     <Compile Include="Characters.xaml.cs">
       <DependentUpon>Characters.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Sword.cs" />
+    <Compile Include="Weapon.cs" />
     <Compile Include="Creator.xaml.cs">
       <DependentUpon>Creator.xaml</DependentUpon>
     </Compile>
@@ -129,6 +130,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="iamge\gragbot.png" />
+    <Resource Include="iamge\Warrior.png" />
+    <Resource Include="Image1.png" />
     <Resource Include="iamge\image %284%29.png" />
   </ItemGroup>
   <ItemGroup>

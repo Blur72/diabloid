@@ -6,9 +6,7 @@ using System.Threading.Tasks;
 
 namespace WpfApp4
 {
-    internal class Weapon
+    internal class SwordEnch
     {
-        public string Name { get; set; }
-        public string Damage { get; set; }
     }
 }
