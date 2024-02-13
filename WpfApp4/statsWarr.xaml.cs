@@ -23,7 +23,8 @@ namespace WpfApp4
         Warior warior = new Warior(1, 30, 10, 15, 25, 0, 0, 0, 0, 0, 0, 0, 0);
         Rogue rogue = new Rogue(1, 20, 15, 30, 20, 0, 0, 0, 0, 0, 0, 0, 0);
         Sorcerer sorcerer = new Sorcerer(1, 15, 35, 20, 15, 0, 0, 0, 0, 0, 0, 0, 0);
-
+        
+        
         int points;
         public statsWarr()
         {
@@ -37,7 +38,7 @@ namespace WpfApp4
         }
         private void nextCreator_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Creator());
+            NavigationService.Navigate(new Creator(warior.str));
         }
 
         private void srtPlus_Click(object sender, RoutedEventArgs e)

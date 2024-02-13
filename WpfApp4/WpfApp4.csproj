@@ -55,6 +55,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="warriorCreator.cs" />
     <Page Include="Characters.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -75,7 +76,6 @@
       <DependentUpon>Characters.xaml</DependentUpon>
     </Compile>
     <Compile Include="Sword.cs" />
-    <Compile Include="Weapon.cs" />
     <Compile Include="Creator.xaml.cs">
       <DependentUpon>Creator.xaml</DependentUpon>
     </Compile>

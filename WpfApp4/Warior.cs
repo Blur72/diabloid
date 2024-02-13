@@ -10,6 +10,7 @@ namespace WpfApp4
     internal class Warior : units
     {
 
+
         public Warior(int lvl, int str, int intel, int dex, int vit, int health, int mana, double physDam, double armor, double magDam, double magDef, double crtChance, double crtDam) : base(lvl, str, intel, dex, intel, vit, health, mana, physDam, armor, magDam, magDef, crtChance, crtDam)
         {
             lvl = 1;
