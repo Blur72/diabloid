@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace WpfApp4
 {
-    internal class units 
+    internal class units : Iunits
     {
         public units(int lvl, int str, int magic, int dex, int intl, int vit, int health, int mana, double physDam, double armor, double magDam, double magDef, double crtChance, double crtDam)
         {

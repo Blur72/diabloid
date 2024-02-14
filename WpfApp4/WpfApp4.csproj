@@ -55,6 +55,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Istatus_effect.cs" />
+    <Compile Include="Iunits.cs" />
+    <Compile Include="status effect.cs" />
     <Compile Include="warriorCreator.cs" />
     <Page Include="Characters.xaml">
       <SubType>Designer</SubType>

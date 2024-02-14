@@ -21,11 +21,10 @@ namespace WpfApp4
     /// </summary>
     public partial class Creator : Page
     {
-        statsWarr sz = new statsWarr();
-        public Creator(double str)
+        
+        public Creator(double physDam)
         {
             InitializeComponent();
-            WeaponStats.Content = str;
         }
         private void slotWeapon_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
@@ -42,17 +41,11 @@ namespace WpfApp4
             img.Source = new BitmapImage(new Uri("/iamge/image (4).png", UriKind.Relative));
             slotWeapon.Child = img;
             slot4.Child = null;
-            
         }
 
         private void CreatorBack_Click(object sender, RoutedEventArgs e)
         {
             NavigationService.GoBack();
-        }
-
-        private void Border_Loaded(object sender, RoutedEventArgs e)
-        {
-            WeaponStats.Content = Visibility.Hidden;
         }
     }
 }

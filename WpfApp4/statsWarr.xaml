@@ -10,46 +10,74 @@
       Title="statsWarr">
 
     <Grid x:Name="statser" Background="Black">
-        <Border BorderBrush="White" BorderThickness="15"></Border>
-        <TextBlock Text="Level:" Foreground="White" FontSize="70" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="94,94,0,0"></TextBlock>
+        <Border BorderBrush="White" BorderThickness="15">
+            <Label Content="Label"/>
+        </Border>
+        <TextBlock Text="Level:" Foreground="White" FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="49,114,0,0"></TextBlock>
         <Button x:Name="WarrBack" Content="←" Foreground="White" FontSize="64" HorizontalAlignment="Left" VerticalAlignment="Top" Background="Black" Click="WarrBack_Click" BorderBrush="Black" Width="79" Margin="20,18,0,0" Height="81"></Button>
         <TextBlock x:Name="lblClass" Foreground="White" FontSize="70" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="826,14,0,0"/>
-        <TextBlock Text="Str:" Foreground="White" FontSize="70" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="94,210,0,0"/>
-        <TextBlock Text="Dex:" Foreground="White" FontSize="70" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="94,290,0,0"/>
-        <TextBlock Text="Int:" Foreground="White" FontSize="70" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="94,370,0,0"/>
-        <TextBlock Text="Health:" Foreground="White" FontSize="70" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="94,639,0,0"/>
-        <TextBlock Text="Mana:" Foreground="White" FontSize="70" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="94,804,0,0"/>
-        <TextBlock Text="Armor:" Foreground="White" FontSize="70" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1263,192,0,0"/>
-        <TextBlock Text="m.Dam:" Foreground="White" FontSize="70" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1263,290,0,0"/>
-        <TextBlock Text="m.Def:" Foreground="White" FontSize="70" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1263,388,0,0"/>
-        <TextBlock Text="crtCh:" Foreground="White" FontSize="70" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="1263,0,0,0"/>
-        <TextBlock Text="crtDam:" Foreground="White" FontSize="70" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1263,592,0,0"/>
-        <TextBlock Text="Points:" Foreground="White" FontSize="70" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="941,851,0,0"/>
-        <TextBox x:Name="lblPoints" Background="Black" HorizontalAlignment="Left" VerticalAlignment="Top" Height="88" Width="336" Margin="1194,852,0,0" BorderBrush="White" Foreground="White" FontSize="64"/>
-        <Label x:Name="lblSrt" Background="Black" HorizontalAlignment="Left" Margin="325,225,0,0" VerticalAlignment="Top" Height="75" Width="316" Foreground="White" FontSize="50"/>
-        <Label Name="lblDex" Content="" HorizontalAlignment="Left" Margin="325,305,0,0" VerticalAlignment="Top" Height="75" Width="316" Foreground="White" FontSize="50"/>
-        <Label Name="lblInt" Content="" HorizontalAlignment="Left" Margin="325,385,0,0" VerticalAlignment="Top" Height="93" Width="317" Foreground="White" FontSize="50"/>
-        <Label Name="lblHealth" Content="" HorizontalAlignment="Left" Margin="420,644,0,0" VerticalAlignment="Top" Height="93" Width="317" Foreground="White" FontSize="50"/>
-        <Label Name="lblMana" Content="" HorizontalAlignment="Left" Margin="420,804,0,0" VerticalAlignment="Top" Height="93" Width="317" Foreground="White" FontSize="50"/>
-        <Label Name="lblArmor" Content="" HorizontalAlignment="Left" Margin="1593,192,0,0" VerticalAlignment="Top" Height="93" Width="317" Foreground="White" FontSize="50"/>
-        <Label x:Name="lblmDam" Content="" HorizontalAlignment="Left" Margin="1593,290,0,0" VerticalAlignment="Top" Height="93" Width="317" Foreground="White" FontSize="50"/>
-        <Label x:Name="lblmDef" Content="" HorizontalAlignment="Left" Margin="1593,388,0,0" VerticalAlignment="Top" Height="93" Width="317" Foreground="White" FontSize="50"/>
-        <Label Name="lblcrtCh" Content="" HorizontalAlignment="Left" Margin="1593,481,0,0" VerticalAlignment="Top" Height="94" Width="317" Foreground="White" FontSize="50"/>
-        <Label Name="lblcrtDam" Content="" HorizontalAlignment="Left" Margin="1593,580,0,0" VerticalAlignment="Top" Height="92" Width="317" Foreground="White" FontSize="50"/>
-        <Label Name="lblLevel" Content="" HorizontalAlignment="Left" Margin="325,100,0,0" VerticalAlignment="Top" Height="93" Width="316" Foreground="White" FontSize="50"/>
-        <TextBlock Text="Vit:" Foreground="White" FontSize="70" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="94,468,0,0"/>
-        <Label x:Name="lblVit" Content="" HorizontalAlignment="Left" Margin="325,483,0,0" VerticalAlignment="Top" Height="80" Width="317" Foreground="White" FontSize="50"/>
-        <Button x:Name="srtPlus" Content="+" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White" FontSize="30" Background="Black" BorderBrush="White" Margin="841,225,0,0" Height="75" Width="75" Click="srtPlus_Click"></Button>
-        <Button x:Name="srtMinus" Content="-" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White" FontSize="30" Background="Black" BorderBrush="White" Margin="1042,225,0,0" Height="75" Width="75" Click="srtMinus_Click"/>
-        <Button x:Name="dexMinus" Content="-" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White" FontSize="30" Background="Black" BorderBrush="White" Margin="1042,308,0,0" Height="75" Width="75" Click="dexMinus_Click"/>
-        <Button x:Name="intMinus" Content="-" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White" FontSize="30" Background="Black" BorderBrush="White" Margin="1042,390,0,0" Height="75" Width="75" Click="intMinus_Click"/>
-        <Button x:Name="vitMinus" Content="-" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White" FontSize="30" Background="Black" BorderBrush="White" Margin="1042,470,0,0" Height="75" Width="75" Click="vitMinus_Click"/>
-        <Button x:Name="dexPlus" Content="+" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White" FontSize="30" Background="Black" BorderBrush="White" Margin="841,308,0,0" Height="75" Width="75" Click="dexPlus_Click"/>
-        <Button x:Name="intPlus" Content="+" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White" FontSize="30" Background="Black" BorderBrush="White" Margin="841,390,0,0" Height="75" Width="75" Click="intPlus_Click"/>
-        <Button x:Name="vitPlus" Content="+" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White" FontSize="30" Background="Black" BorderBrush="White" Margin="841,470,0,0" Height="75" Width="75" Click="vitPlus_Click"/>
-        <TextBlock Text="p.Dam" Foreground="White" FontSize="70" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1260,94,0,0"/>
-        <Label x:Name="lblpDam" Content="" HorizontalAlignment="Left" Margin="1593,94,0,0" VerticalAlignment="Top" Height="93" Width="317" Foreground="White" FontSize="50"/>
+        <TextBlock Text="Str:" Foreground="White" FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="57,172,0,0"/>
+        <TextBlock Text="Dex:" Foreground="White" FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="57,230,0,0"/>
+        <TextBlock Text="Int:" Foreground="White" FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="57,290,0,0"/>
+        <TextBlock Text="Health:" Foreground="White" FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="39,468,0,0"/>
+        <TextBlock Text="Mana:" Foreground="White" FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="45,540,0,0"/>
+        <TextBlock Text="Armor:" Foreground="White" FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="39,705,0,0"/>
+        <TextBlock Text="m.Dam:" Foreground="White" FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="39,757,0,0"/>
+        <TextBlock Text="m.Def:" Foreground="White" FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="39,811,0,0"/>
+        <TextBlock Text="crtCh:" Foreground="White" FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="39,864,0,0"/>
+        <TextBlock Text="crtDam:" Foreground="White" FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="39,923,0,0"/>
+        <TextBlock Text="Points:" Foreground="White" FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="292,510,0,0"/>
+        <TextBox x:Name="lblPoints" Background="Black" HorizontalAlignment="Left" VerticalAlignment="Top" Height="48" Width="189" Margin="412,510,0,0" BorderBrush="White" Foreground="White" FontSize="35"/>
+        <Label x:Name="lblSrt" Background="Black" HorizontalAlignment="Left" Margin="167,172,0,0" VerticalAlignment="Top" Height="40" Width="126" Foreground="White" FontSize="20"/>
+        <Label Name="lblDex" Content="" HorizontalAlignment="Left" Margin="167,230,0,0" VerticalAlignment="Top" Height="40" Width="126" Foreground="White" FontSize="20"/>
+        <Label Name="lblInt" Content="" HorizontalAlignment="Left" Margin="163,290,0,0" VerticalAlignment="Top" Height="40" Width="130" Foreground="White" FontSize="20"/>
+        <Label Name="lblHealth" Content="" HorizontalAlignment="Left" Margin="167,474,0,0" VerticalAlignment="Top" Height="40" Width="115" Foreground="White" FontSize="20"/>
+        <Label Name="lblMana" Content="" HorizontalAlignment="Left" Margin="163,540,0,0" VerticalAlignment="Top" Height="40" Width="119" Foreground="White" FontSize="20"/>
+        <Label Name="lblArmor" Content="" Margin="190,711,0,0" VerticalAlignment="Top" Height="30" Width="115" Foreground="White" FontSize="15" HorizontalAlignment="Left"/>
+        <Label x:Name="lblmDam" Content="" Margin="190,763,0,0" VerticalAlignment="Top" Height="30" Width="115" Foreground="White" FontSize="15" HorizontalAlignment="Left"/>
+        <Label x:Name="lblmDef" Content="" Margin="190,817,0,0" VerticalAlignment="Top" Height="30" Width="115" Foreground="White" FontSize="15" HorizontalAlignment="Left"/>
+        <Label Name="lblcrtCh" Content="" Margin="190,874,0,0" VerticalAlignment="Top" Height="30" Width="115" Foreground="White" FontSize="15" HorizontalAlignment="Left"/>
+        <Label Name="lblcrtDam" Content="" Margin="190,923,0,0" VerticalAlignment="Top" Height="30" Width="115" Foreground="White" FontSize="15" HorizontalAlignment="Left"/>
+        <Label Name="lblLevel" Content="12" HorizontalAlignment="Left" Margin="163,120,0,0" VerticalAlignment="Top" Height="40" Width="130" Foreground="White" FontSize="20"/>
+        <TextBlock Text="Vit:" Foreground="White" FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="56,356,0,0"/>
+        <Label x:Name="lblVit" Content="" HorizontalAlignment="Left" Margin="163,363,0,0" VerticalAlignment="Top" Height="33" Width="130" Foreground="White" FontSize="20"/>
+        <Button x:Name="srtPlus" Content="+" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White" FontSize="30" Background="Black" BorderBrush="White" Margin="351,120,0,0" Height="57" Width="57" Click="srtPlus_Click"></Button>
+        <Button x:Name="srtMinus" Content="-" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White" FontSize="30" Background="Black" BorderBrush="White" Margin="456,120,0,0" Height="57" Width="57" Click="srtMinus_Click"/>
+        <Button x:Name="dexMinus" Content="-" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White" FontSize="30" Background="Black" BorderBrush="White" Margin="456,201,0,0" Height="57" Width="57" Click="dexMinus_Click"/>
+        <Button x:Name="intMinus" Content="-" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White" FontSize="30" Background="Black" BorderBrush="White" Margin="456,276,0,0" Height="57" Width="57" Click="intMinus_Click"/>
+        <Button x:Name="vitMinus" Content="-" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White" FontSize="30" Background="Black" BorderBrush="White" Margin="456,356,0,0" Height="57" Width="57" Click="vitMinus_Click"/>
+        <Button x:Name="dexPlus" Content="+" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White" FontSize="30" Background="Black" BorderBrush="White" Margin="351,201,0,0" Height="57" Width="57" Click="dexPlus_Click"/>
+        <Button x:Name="intPlus" Content="+" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White" FontSize="30" Background="Black" BorderBrush="White" Margin="351,276,0,0" Height="57" Width="57" Click="intPlus_Click"/>
+        <Button x:Name="vitPlus" Content="+" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White" FontSize="30" Background="Black" BorderBrush="White" Margin="351,356,0,0" Height="57" Width="57" Click="vitPlus_Click"/>
+        <TextBlock Text="p.Dam" Foreground="White" FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="39,649,0,0"/>
+        <Label x:Name="lblpDam" Content="" Margin="190,659,0,0" VerticalAlignment="Top" Height="30" Width="115" Foreground="White" FontSize="15" HorizontalAlignment="Left"/>
         <Button x:Name="nextCreator" Content="→" Foreground="White" FontSize="64" HorizontalAlignment="Left" VerticalAlignment="Top" Background="Black" Click="nextCreator_Click" BorderBrush="Black" Width="116" Margin="1727,955,0,0"/>
+        <Border x:Name="gragas" BorderThickness="10" BorderBrush="White" Margin="1121,399,363,404">
+            <Image x:Name="grag" Source="/iamge/Warrior.png" HorizontalAlignment="Center" Width="111" Margin="0,-1,0,-1"/>
+        </Border>
+        <Border x:Name="slot1" BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="238" Margin="1622,393,0,0" VerticalAlignment="Top" Width="150"/>
+        <Border x:Name="slot2" BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="157" Margin="1257,219,0,0" VerticalAlignment="Top" Width="159"/>
+        <Border x:Name="slotWeapon" BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="238" Margin="911,393,0,0" VerticalAlignment="Top" Width="150" MouseLeftButtonDown="slotWeapon_MouseLeftButtonDown"/>
+        <Border x:Name="slot4" BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" VerticalAlignment="Top" Height="90" Width="90" Margin="1076,714,0,0" MouseLeftButtonDown="slot4_MouseLeftButtonDown">
+            <Image x:Name="sword" Source="/iamge/image (4).png" HorizontalAlignment="Center" VerticalAlignment="Center" Width="64"/>
+        </Border>
+        <Border x:Name="slot5" BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="90" Margin="1166,714,0,0" VerticalAlignment="Top" Width="91"/>
+        <Border x:Name="slot6" BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="90" Margin="1257,714,0,0" VerticalAlignment="Top" Width="91"/>
+        <Border x:Name="slot7" BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="90" Margin="1348,714,0,0" VerticalAlignment="Top" Width="90"/>
+        <Border x:Name="slot8" BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="90" Margin="1438,714,0,0" VerticalAlignment="Top" Width="90"/>
+        <Border x:Name="slot9" BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="90" Margin="1528,714,0,0" VerticalAlignment="Top" Width="92"/>
+        <Border x:Name="slot10" BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="90" Margin="1076,804,0,0" VerticalAlignment="Top" Width="90"/>
+        <Border x:Name="slot11" BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="90" Margin="1166,804,0,0" VerticalAlignment="Top" Width="91"/>
+        <Border x:Name="slot13" BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="90" Margin="1348,804,0,0" VerticalAlignment="Top" Width="90"/>
+        <Border x:Name="slot14" BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="90" Margin="1438,804,0,0" VerticalAlignment="Top" Width="90"/>
+        <Border x:Name="slot15" BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="90" Margin="1528,804,0,0" VerticalAlignment="Top" Width="92"/>
+        <Border x:Name="slot16" BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="90" Margin="1076,894,0,0" VerticalAlignment="Top" Width="90"/>
+        <Border x:Name="slot17" BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="90" Margin="1166,894,0,0" VerticalAlignment="Top" Width="91"/>
+        <Border x:Name="slot18" BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="90" Margin="1257,894,0,0" VerticalAlignment="Top" Width="91"/>
+        <Border x:Name="slot19" BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="90" Margin="1348,894,0,0" VerticalAlignment="Top" Width="90"/>
+        <Border x:Name="slot20" BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="90" Margin="1438,894,0,0" VerticalAlignment="Top" Width="90"/>
+        <Border x:Name="slot21" BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="90" Margin="1528,894,0,0" VerticalAlignment="Top" Width="92"/>
+        <Label x:Name="WeaponStats" Content="" HorizontalAlignment="Left" Margin="911,641,0,0" VerticalAlignment="Top" Width="142" Height="48" Foreground="White" BorderBrush="Red" BorderThickness="2" FontSize="20" VerticalContentAlignment="Center"/>
 
     </Grid>
 </Page>

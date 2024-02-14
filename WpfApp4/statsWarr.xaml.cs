@@ -38,7 +38,7 @@ namespace WpfApp4
         }
         private void nextCreator_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Creator(warior.str));
+            NavigationService.Navigate(new Creator(warior.physDam));
         }
 
         private void srtPlus_Click(object sender, RoutedEventArgs e)
@@ -689,5 +689,25 @@ namespace WpfApp4
                 lblMana.Content = sorcerer.intel;
             }
         }
+
+        private void slotWeapon_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            Image img = new Image();
+            img.Source = new BitmapImage(new Uri("/iamge/image (4).png", UriKind.Relative));
+            slot4.Child = img;
+            slotWeapon.Child = null;
+            WeaponStats.Content = null;
+        }
+
+        private void slot4_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+
+            Image img = new Image();
+            img.Source = new BitmapImage(new Uri("/iamge/image (4).png", UriKind.Relative));
+            slotWeapon.Child = img;
+            slot4.Child = null;
+            WeaponStats.Content = warior.str;
+        }
     }
 }
+

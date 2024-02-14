@@ -27,7 +27,8 @@ namespace WpfApp4
             crtChance = 0;
             crtDam = 0;
         }
-       
+        
+        
                 
                 
   
