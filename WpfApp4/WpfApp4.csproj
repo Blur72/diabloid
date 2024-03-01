@@ -132,15 +132,20 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="iamge\gragbot.png" />
-    <Resource Include="iamge\Warrior.png" />
+    <Resource Include="iamge\swords\swordEnchanted.png" />
+    <Resource Include="iamge\swords\swordRare.png" />
+    <Resource Include="iamge\swords\swordCommon.png" />
+    <Resource Include="iamge\heroBacks\Warrior.png" />
     <Resource Include="Image1.png" />
-    <Resource Include="iamge\image %284%29.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="iamge\photo_5314425823371056525_x.jpg" />
-    <Resource Include="iamge\photo_5314425823371056526_x.jpg" />
-    <Resource Include="iamge\photo_5314425823371056527_x.jpg" />
+    <Resource Include="iamge\heroBacks\Rogue.png" />
+    <Resource Include="iamge\heroBacks\Sorcerer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="iamge\helmets\helmetCommon.png" />
+    <Resource Include="iamge\helmets\helmetEnchanted.png" />
+    <Resource Include="iamge\helmets\helmetRare.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
